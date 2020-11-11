@@ -184,7 +184,7 @@ dependencies = [
  "chacha20poly1305",
  "rand",
  "rand_core",
- "salsa20",
+ "salsa20 0.7.1 (git+https://github.com/Wassasin/stream-ciphers.git?branch=fix-salsa20-zeroize-alloc)",
  "x25519-dalek",
  "xsalsa20poly1305",
  "zeroize",
@@ -474,6 +474,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "salsa20"
+version = "0.7.1"
+source = "git+https://github.com/Wassasin/stream-ciphers.git?branch=fix-salsa20-zeroize-alloc#7399763544eea3d3de96767e6968f89523ce9869"
+dependencies = [
+ "cipher",
+]
+
+[[package]]
 name = "stable_deref_trait"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -560,7 +568,7 @@ dependencies = [
  "aead",
  "poly1305",
  "rand_core",
- "salsa20",
+ "salsa20 0.7.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "subtle",
  "zeroize",
 ]
